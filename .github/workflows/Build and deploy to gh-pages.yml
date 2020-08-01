@@ -1,4 +1,4 @@
-name: CI/CD
+name: Build React Production App and deploy to gh-pages
 
 on:
   push:
