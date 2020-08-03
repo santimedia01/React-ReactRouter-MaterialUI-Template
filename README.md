@@ -1,5 +1,5 @@
 # ¿Qué es esto?
-Es un proyecto template, para crear apps más rápido.
+Es un proyecto template, para crear apps más rápido, con varias cosas preinstaladas y algunos agregados.
 
 ## Live Preview
 
