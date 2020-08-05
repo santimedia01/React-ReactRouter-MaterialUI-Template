@@ -38,10 +38,12 @@ jobs:
       
     - name: Build de la app
       run: npm run build
+    
+    - name: Limpiar caché por cambio de repositorio
+      run: rm -rf node_modules/gh-pages/.cache
 
     - name: Deploy de la app
       run: |
-        rm -rf node_modules/gh-pages/.cache
         git config --global user.name $user_name
         git config --global user.email $user_email
         git remote set-url origin https://${github_token}@github.com/${repository}
