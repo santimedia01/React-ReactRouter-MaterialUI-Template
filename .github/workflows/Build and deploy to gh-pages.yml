@@ -39,7 +39,7 @@ jobs:
     - name: Build de la app
       run: npm run build
     
-    - name: Limpiar caché por cambio de repositorio
+    - name: Limpiar caché de gh-pages
       run: npm run gh-pages-clean
 
     - name: Deploy de la app
