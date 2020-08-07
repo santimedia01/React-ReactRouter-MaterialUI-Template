@@ -4,7 +4,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
  * sinó, si se está utilizando algo como Github Pages (Sitios Estáticos) usar HashRouter
  */
 
-import PaginaNoEncontrada from './components/error/404/PaginaNoEncontrada.jsx';
+import PaginaNoEncontrada from './components/error/404/PaginaNoEncontrada';
 import App from "./App";
 
 const Router = () => (
