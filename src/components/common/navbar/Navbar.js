@@ -1,20 +1,20 @@
 import React from 'react';
 
 import { AppBar, Toolbar, IconButton, Typography, Menu, MenuItem, makeStyles, Button } from '@material-ui/core';
-/* */
+/* 
 import { InputBase, Badge, fade } from '@material-ui/core';
-
+*/
 
 import MenuIcon from '@material-ui/icons/Menu';
 import BusinessIcon from '@material-ui/icons/Business';
 
-/* */
+/* 
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-
+*/
 
 
 const useStyles = makeStyles((theme) => ({
