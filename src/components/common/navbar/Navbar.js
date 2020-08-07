@@ -97,22 +97,22 @@ export default function PrimaryAppBar() {
   const classes = useStyles();
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   /* MENU PERFIL DE USUARIO 
-  const [profileAnchorEl, setProfileAnchorEl] = React.useState(null);
+  const [profileMenuAnchorEl, setProfileMenuAnchorEl] = React.useState(null);
   */
 
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
   /* MENU PERFIL DE USUARIO
-  const isProfileMenuOpen = Boolean(anchorEl);
+  const isProfileMenuOpen = Boolean(profileMenuAnchorEl);
   */
 
   /* MENU PERFIL DE USUARIO
   const handleProfileMenuClose = () => {
-    setProfileAnchorEl(null);
+    setProfileMenuAnchorEl(null);
     handleMobileMenuClose();
   };
 
   const handleProfileMenuOpen = (event) => {
-    setProfileAnchorEl(event.currentTarget);
+    setProfileMenuAnchorEl(event.currentTarget);
   };
   */
 
@@ -133,7 +133,7 @@ export default function PrimaryAppBar() {
   const renderProfileUserMenu = (
     <Menu
       id='primary-search-account-menu'
-      anchorEl={anchorEl}
+      anchorEl={profileMenuAnchorEl}
       anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
       keepMounted
       transformOrigin={{ vertical: 'top', horizontal: 'right' }}
