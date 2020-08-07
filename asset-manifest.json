@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/React-ReactRouter-MaterialUI-Template/static/css/main.ff862c72.chunk.css",
-    "main.js": "/React-ReactRouter-MaterialUI-Template/static/js/main.c3e8b571.chunk.js",
-    "main.js.map": "/React-ReactRouter-MaterialUI-Template/static/js/main.c3e8b571.chunk.js.map",
+    "main.js": "/React-ReactRouter-MaterialUI-Template/static/js/main.ee4370a2.chunk.js",
+    "main.js.map": "/React-ReactRouter-MaterialUI-Template/static/js/main.ee4370a2.chunk.js.map",
     "runtime-main.js": "/React-ReactRouter-MaterialUI-Template/static/js/runtime-main.8e999708.js",
     "runtime-main.js.map": "/React-ReactRouter-MaterialUI-Template/static/js/runtime-main.8e999708.js.map",
     "static/js/2.78069f01.chunk.js": "/React-ReactRouter-MaterialUI-Template/static/js/2.78069f01.chunk.js",
     "static/js/2.78069f01.chunk.js.map": "/React-ReactRouter-MaterialUI-Template/static/js/2.78069f01.chunk.js.map",
     "index.html": "/React-ReactRouter-MaterialUI-Template/index.html",
-    "precache-manifest.4b24be36e353a475583cc5a65c147e5b.js": "/React-ReactRouter-MaterialUI-Template/precache-manifest.4b24be36e353a475583cc5a65c147e5b.js",
+    "precache-manifest.1f8f790352cc648491710da34ece7988.js": "/React-ReactRouter-MaterialUI-Template/precache-manifest.1f8f790352cc648491710da34ece7988.js",
     "service-worker.js": "/React-ReactRouter-MaterialUI-Template/service-worker.js",
     "static/css/main.ff862c72.chunk.css.map": "/React-ReactRouter-MaterialUI-Template/static/css/main.ff862c72.chunk.css.map",
     "static/js/2.78069f01.chunk.js.LICENSE.txt": "/React-ReactRouter-MaterialUI-Template/static/js/2.78069f01.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.8e999708.js",
     "static/js/2.78069f01.chunk.js",
     "static/css/main.ff862c72.chunk.css",
-    "static/js/main.c3e8b571.chunk.js"
+    "static/js/main.ee4370a2.chunk.js"
   ]
 }
