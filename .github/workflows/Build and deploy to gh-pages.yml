@@ -2,9 +2,9 @@ name: Build React Production App and deploy to gh-pages
 
 on:
   push:
-    branches: [ master ]
+    branches: [ all-elements-uncommented ]
   pull_request:
-    branches: [ master ]
+    branches: [ all-elements-uncommented ]
 
 jobs:
   build:
