@@ -20,7 +20,8 @@ Es un proyecto template, para crear apps más rápido, con varias cosas preinsta
 ### Navbar - Elementos no habilitados (comentados)
 (Al descomentarlos, no olvidar de descomentar los import de los componentes requeridos)
 - Caja de búsqueda.
-- Icono de notificaciones.
+- Icono de notificaciones con un badge de cantidad de notificaciones.
+- Icono de carrito de compras con un badge de cantidad de articulos.
 - Menú de perfil de usuario logeado.
 
 # ¿Por donde empezar?
