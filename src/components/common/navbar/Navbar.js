@@ -1,21 +1,12 @@
 import React from 'react';
 
-import { AppBar, Toolbar, IconButton, Typography, Menu, MenuItem, makeStyles, Button } from '@material-ui/core';
-/* */
-import { InputBase, Badge, fade } from '@material-ui/core';
-
-
+import { AppBar, Toolbar, IconButton, Typography, Menu, MenuItem, makeStyles, Button, InputBase, Badge, fade } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import BusinessIcon from '@material-ui/icons/Business';
-
-/* */
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-
-
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -24,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
   brandLogo: {
     marginRight: theme.spacing(2),
   },
-  /* CAJA DE BÚSQUEDA
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
@@ -73,7 +63,6 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
-  */
   sectionDesktop: {
     display: 'none',
     [theme.breakpoints.up('md')]: {
@@ -96,16 +85,11 @@ export default function PrimaryAppBar() {
   */
   const classes = useStyles();
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-  /* MENU PERFIL DE USUARIO 
   const [profileAnchorEl, setProfileAnchorEl] = React.useState(null);
-  */
 
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-  /* MENU PERFIL DE USUARIO
-  const isProfileMenuOpen = Boolean(anchorEl);
-  */
+  const isProfileMenuOpen = Boolean(profileAnchorEl);
 
-  /* MENU PERFIL DE USUARIO
   const handleProfileMenuClose = () => {
     setProfileAnchorEl(null);
     handleMobileMenuClose();
@@ -114,7 +98,6 @@ export default function PrimaryAppBar() {
   const handleProfileMenuOpen = (event) => {
     setProfileAnchorEl(event.currentTarget);
   };
-  */
 
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
@@ -128,12 +111,10 @@ export default function PrimaryAppBar() {
    *  RENDERS DE SECCIONES
    *  ------------------------------------
   */
-  
-  /* MENU PERFIL DE USUARIO 
   const renderProfileUserMenu = (
     <Menu
-      id='primary-search-account-menu'
-      anchorEl={anchorEl}
+      id='primary-account-menu'
+      anchorEl={profileAnchorEl}
       anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
       keepMounted
       transformOrigin={{ vertical: 'top', horizontal: 'right' }}
@@ -147,16 +128,14 @@ export default function PrimaryAppBar() {
   const renderProfileUserMenuIcon = (
     <IconButton
       aria-label="cuenta del usuario actual"
-      aria-controls="primary-search-account-menu"
+      aria-controls="primary-account-menu"
       aria-haspopup="true"
       color="inherit"
     >
       <AccountCircle />
     </IconButton>
   );
-  */
 
-  /* CAJA DE BÚSQUEDA
   const renderSearchBox = (
     <div className={classes.search}>
       <div className={classes.searchIcon}>
@@ -165,9 +144,7 @@ export default function PrimaryAppBar() {
       <InputBase placeholder="Buscar..." classes={{root: classes.inputRoot, input: classes.inputInput}} inputProps={{ 'aria-label': 'search' }} />
     </div>
   );
-  */
 
-  /* ICONO CARRITO DE COMPRAS  
   const renderShoppingCartMenuIcon = (
     <IconButton href="#" aria-label="carrito de compras" color="inherit">
       <Badge badgeContent={0} color="secondary" showZero>
@@ -175,9 +152,7 @@ export default function PrimaryAppBar() {
       </Badge>
     </IconButton>
   );
-  */
 
-  /* ICONO DE NOTIFICACIONES
   const renderNotificationsIcon = (
     <IconButton aria-label="mostrar 17 nuevas notificaciones" color="inherit">
       <Badge badgeContent={17} color="secondary">
@@ -185,7 +160,6 @@ export default function PrimaryAppBar() {
       </Badge>
     </IconButton>
   );
-  */
   
   const renderMobileMenu = (
     <Menu
@@ -197,30 +171,22 @@ export default function PrimaryAppBar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      {/* CAJA DE BUSQUEDA
       <MenuItem>
         {renderSearchBox}
       </MenuItem>
       <hr />
-      */}
-      {/* ICONO DE NOTIFICACIONES
       <MenuItem>
         {renderNotificationsIcon}
         <p>Notificaciones</p>
       </MenuItem>
-      */}
-      {/* MENU PERFIL DE USUARIO
-      <MenuItem onClick={handleProfileMenuOpen}>
-        {renderProfileUserMenuIcon}
-        <p>Perfil</p>
-      </MenuItem>
-      */}
-      {/* ICONO CARRITO DE COMPRAS 
       <MenuItem>
         {renderShoppingCartMenuIcon}
         <p>Carrito</p>
       </MenuItem>
-      */}
+      <MenuItem onClick={handleProfileMenuOpen}>
+        {renderProfileUserMenuIcon}
+        <p>Perfil</p>
+      </MenuItem>
       <MenuItem>
         <Button href="#" color="inherit" disableRipple>Iniciar Sesión</Button>
       </MenuItem>
@@ -238,10 +204,12 @@ export default function PrimaryAppBar() {
           <Typography variant="h6" noWrap>App con React</Typography>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            {/* CAJA DE BÚSQUEDA {renderSearchBox} */}
-            {/* MENU DE PERFIL DE USUARIO {renderProfileUserMenuIcon} */}
-            {/* ICONO DE NOTIFICACIONES {renderNotificationsIcon} */}
-            {/* ICONO CARRITO DE COMPRAS {renderShoppingCartMenuIcon} */}
+            {renderSearchBox}
+            {renderNotificationsIcon}
+            {renderShoppingCartMenuIcon}
+            <div onClick={handleProfileMenuOpen}>
+              {renderProfileUserMenuIcon}
+            </div>
             <Button href="#" color="inherit">Iniciar Sesión</Button>
             <Button href="#" color="inherit">Crear Cuenta</Button>
           </div>
@@ -259,7 +227,7 @@ export default function PrimaryAppBar() {
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
-      {/* MENU PERFIL DE USUARIO {renderProfileUserMenu} */}
+      {renderProfileUserMenu}
       <div className={classes.navBarOffset}></div>
     </div>
   );
