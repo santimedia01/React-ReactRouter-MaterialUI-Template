@@ -3,6 +3,9 @@ Es un proyecto template, para crear apps más rápido, con varias cosas preinsta
 
 # [Live Preview](https://santimedia01.github.io/React-ReactRouter-MaterialUI-Template)
 
+El live preview está basado en la rama all-elements-uncommented, donde están todos los elementos sin comentar, visibles, valga la redundancia.
+En la rama master se conservan los elementos comentados
+
 ## Tecnologías / Librerías
 1. React con [Create React App](https://github.com/facebook/create-react-app) 
 2. React Router
