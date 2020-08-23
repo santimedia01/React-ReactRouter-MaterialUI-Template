@@ -238,7 +238,7 @@ export default function PrimaryAppBar() {
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             {/* CAJA DE BÚSQUEDA {renderSearchBox} */}
-            {/* MENU DE PERFIL DE USUARIO {renderProfileUserMenuIcon} */}
+            {/* MENU DE PERFIL DE USUARIO <div onClick={handleProfileMenuOpen}> {renderProfileUserMenuIcon} </div>*/}
             {/* ICONO DE NOTIFICACIONES {renderNotificationsIcon} */}
             {/* ICONO CARRITO DE COMPRAS {renderShoppingCartMenuIcon} */}
             <Button href="#" color="inherit">Iniciar Sesión</Button>
